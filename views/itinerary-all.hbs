@@ -1,0 +1,40 @@
+<h2>Itineraries</h2>
+<div id='filterbox'>
+    <h3>Filters</h3>
+    <form method="GET" action="../../{{user.username}}/itinerary/all">
+        Filter By Title: <input type="text" name="filterTitle">
+        <input type="submit">
+    </form>
+    <form method="GET" action="../../{{user.username}}/itinerary/all">
+        Filter By Location: <input type="text" name="filterLocation">
+        <input type="submit">
+    </form>
+    <br>
+    <form method="GET" action="../../{{user.username}}/itinerary/all">
+        <input type="submit" name="onlyTitles" value="Only Show Titles">
+    </form>
+    <br>
+    <form method="GET" action="../../{{user.username}}/itinerary/all">
+        <input type="submit" name="showDescription" value="Show Full Descriptions">
+    </form>
+</div>
+<br>
+{{#if itineraries}}
+    {{#each itineraries}}
+        <ul>
+            <li>{{title}}</li>    
+            <ul>
+                <li>Location: {{location}}</li>
+                <li>Days: {{days}}</li>
+                <li>Description: {{description}}</li>
+                <a href="/:username/itinerary/{{title}}" class="button">Edit</a>
+            </ul>    
+        </ul>
+    {{/each}}
+{{else}}
+    {{#each titles}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+    {{/each}}
+{{/if}}

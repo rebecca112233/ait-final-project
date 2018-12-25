@@ -1,0 +1,31 @@
+{
+  "name": "rebecca112233-final-project",
+  "version": "1.0.0",
+  "description": "final project using Express and MongoDB",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "foundation-sites": "^6.5.1",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.3.10",
+    "mongoose-url-slugs": "^1.0.2",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-001-003-fall-2018/rebecca112233-final-project.git"
+  },
+  "author": "Rebecca Shi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/rebecca112233-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/rebecca112233-final-project#readme"
+}

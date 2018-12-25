@@ -1,0 +1,20 @@
+<h2>Where do you want to go?</h2>
+<p>Click anywhere on the map, fill in a description, and click pin to pin the location on the map. When you're done adding pins, click the green button to submit your new pins.</p>
+{{#if mapPosition}}
+    <p type="hidden" id="currentPins">{{mapPosition}}</p>
+    <p type="hidden" id="currentDescs">{{mapDescription}}</p>
+{{/if}}
+
+<div id="mapid"></div>
+<div id="pinarea">
+    <form>
+        Description:<input type="text" name="description" id="description" maxlength="30">
+        <input class= "pin button" name="pinButton" value="Pin">
+    </form>
+</div>
+
+<form method="POST" action="">
+    <input type="hidden" name="myHiddenPins" id="myHiddenPins" runat="server">
+    <input type="hidden" name="myHiddenDescs" id="myHiddenDescs" runat="server">
+    <input type="submit" class="success button" value="Click here when you're done adding pins">
+</form>

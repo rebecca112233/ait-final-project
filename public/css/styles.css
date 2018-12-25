@@ -1,0 +1,78 @@
+body{
+    padding: 20px;
+    background-color: lightcyan;
+}
+
+h1{
+    text-align: left;
+    display: inline-block;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+
+/*LAYOUT PAGE*/
+    /*NAV BAR*/
+#title{
+    font-family: 'Dancing Script', cursive;
+}
+
+#nav{
+    padding: 0;
+    margin: 0 auto;
+}
+
+a:hover{
+    background-color: lightblue; 
+}
+
+.error{
+    background-color: palevioletred;
+    text-align: center;
+}
+
+#login{
+    float: right;
+    color: white;
+    border-radius: 15px;
+}
+
+#loggedin{
+    color: white;
+    background-color: #3adb76;
+    border-radius: 15px;
+}
+    /*MAIN BODY*/
+#main{
+    margin: 0 auto;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top: 20px;
+}
+
+@media screen and (min-width:701px){
+    #main{
+        width: 700px;
+    }
+}
+@media screen and (max-width:700px){
+    #main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+#filterbox{
+    border-style: dashed;
+    border-width: 4px;
+    border-color: lightcoral;
+    text-align: center;
+    padding: 30px;
+}
+
+/*MAP*/
+#mapid{
+    width: 600px;
+    height: 400px;
+}

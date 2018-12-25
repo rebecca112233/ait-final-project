@@ -1,0 +1,21 @@
+<h2>Register</h2>
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="register">
+	<div>
+		<label for="username">Username:</label>
+		<input type="text" name="username" value="" maxlength="15" required>
+	</div>
+	<div>
+		<label for="email">Email:</label> 
+		<input type="email" name="email" value="" required>
+	</div>
+	<div>
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="" required>
+	</div>
+	<div><input type="submit" value="Register"></div>
+</form>
+<br>
+<a href = 'login'>Have an account? Click here to login.</a>
